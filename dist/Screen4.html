@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form builder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="mx-0 mb-4 mt-5 text-2xl font-semibold md:mx-40">CRUD UI</h1>
+    <div class="container mx-auto mt-5 border bg-white shadow">
+      <div class="px-6 py-6">
+        <div class="mt-4 bg-white px-5 py-4 shadow">
+          <div class="mb-4">
+            <h2 class="mb-2 text-lg font-semibold">Settings</h2>
+            <hr class="mt-5" />
+            <form class="mt-5 flex gap-4">
+              <div class="mb-6 w-full">
+                <label
+                  for="default-input"
+                  class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  >Modal Name</label
+                >
+                <input
+                  type="text"
+                  id="default-input"
+                  class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                />
+                <p class="mt-2 text-[14px]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="mb-6 w-full">
+                <label
+                  class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  for="large_size"
+                  >Menue title and Icon</label
+                >
+                <div class="flex">
+                  <svg
+                    class="mr-2 h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  <input
+                    class="w-full rounded-r-md border border-gray-300 p-1.5 text-sm"
+                    type="text"
+                    placeholder="Enter your text"
+                  />
+                </div>
+                <p class="mt-2 text-[14px]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="mb-6 w-full">
+                <label
+                  for="countries"
+                  class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  >Parent menue</label
+                >
+                <select
+                  id="countries"
+                  class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                >
+                  <option selected>No parrent</option>
+                  <option value="US">No parrent</option>
+                  <option value="CA">No parrent</option>
+                  <option value="FR">No parrent</option>
+                  <option value="DE">No parrent</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-5">
+      <button
+        type="button"
+        class="mb-2 mr-2 bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+      >
+        Save parent CRUD
+      </button>
+    </div>
+  </body>
+</html>
